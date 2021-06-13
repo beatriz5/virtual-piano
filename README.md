@@ -20,9 +20,11 @@ Beatriz https://github.com/beatriz5
 
 ## Acknowledgments
 
-* https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
-* https://ezgif.com/
-* https://github.com/PV-COP/PV-README-TEMPLATE/blob/master/TemplateWithInfo.md
+https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
+
+https://ezgif.com/
+
+https://github.com/PV-COP/PV-README-TEMPLATE/blob/master/TemplateWithInfo.md
 
 ## Key Programming Concepts Utilized
 
