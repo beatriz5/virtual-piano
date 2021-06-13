@@ -22,13 +22,16 @@ kbd{
 
 .white-key{
     display: inline-block;
-    border: solid lightgray;
+    border: solid darkgray;
     width: 6rem;
-    height: 15rem;
-    margin-left: -6px;;
+    height: 20rem;
+    margin-left: -6px;
     background-color: white;
+    box-shadow: 0 5px 10px 0 black, 0 6px 20px 0 skyblue;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     z-index: 1;
-    line-height: 27rem;
+    line-height: 34rem;
 }
 
 .white-keys{
@@ -38,14 +41,16 @@ kbd{
 
 .black-key{
     display: inline-block;
-    border: solid lightgray;
+    border: solid darkgray;
     width: 4rem;
-    height: 10rem;
+    height: 13rem;
     background-color: black;
     color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     z-index: 2;
     position: relative;
-    line-height: 15rem;
+    line-height: 20rem;
     margin-right:  1.9rem;
 }
 
