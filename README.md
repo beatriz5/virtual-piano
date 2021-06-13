@@ -6,7 +6,7 @@ It is a virtual piano that can be played thorugh keyboard or clicking.
 
 https://beatriz5.github.io/virtual-piano/
 
-![](virtual-piano.gif)
+![](ezgif.com-gif-maker.gif)
 
 ## Built With
 
