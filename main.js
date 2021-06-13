@@ -13,9 +13,9 @@ document.addEventListener("keydown", function(event) {
 
         /* color change */
         let currentColor = whiteKeys.includes(key.toUpperCase()) ? "white" : "black";
-        document.getElementById(key.toUpperCase()).style.background = "lightblue";
+        document.getElementById(key.toUpperCase()).style.background = "#85C1E9";
         setTimeout(function(){
-            document.getElementById(key.toUpperCase()).style.background = currentColor; }, 700);
+            document.getElementById(key.toUpperCase()).style.background = currentColor; }, 300);
 
     } else{
         console.log(`The piano does not have the '${key.toUpperCase()}' key`);
@@ -39,15 +39,13 @@ document.addEventListener('click', function(e) {
 
         /* color change */
         let currentColor = whiteKeys.includes(text) ? "white" : "black";
-        document.getElementById(text).style.background = "#7ea6a6";
+        document.getElementById(text).style.background = "#85C1E9";
         setTimeout(function () {
-            document.getElementById(text).style.background = currentColor; }, 700);
+            document.getElementById(text).style.background = currentColor; }, 300);
 
     }else{
         console.log("That is not part of a key");
-    }
-
-    }, false);
+    }}, false);
 
 /*
 document.addEventListener("keydown", function(event) {
