@@ -1,19 +1,42 @@
 document.addEventListener("keydown", function(event) {
-    let key= event.key; //example a or A or s
+    let key = event.key; //example a or A or s
     let code = event.code; //example KeyA which is a or A
     let codes = ['KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ',
         'KeyW','KeyE','KeyT','KeyY','KeyU'];
+    let whiteKeys = ['A','S','D','F','G','H','J'];
 
     if(codes.includes(code)){
+
         console.log(`The '${key}' key is pressed`);
         let audioFile = `audio/${key.toUpperCase()}.mp3`
         let audio =  new Audio(audioFile);
-        console.log(`audio/${key.toUpperCase()}.mp3`);
         audio.play();
+
+        let currentColor = whiteKeys.includes(key.toUpperCase()) ? "white" : "black";
+        document.getElementById(key.toUpperCase()).style.background = "#7ea6a6";
+        setTimeout(function(){
+            document.getElementById(key.toUpperCase()).style.background = currentColor; }, 550);
+
     } else{
         console.log(`The piano does not have the '${key.toUpperCase()}' key`);
     }
 });
+
+document.getElementById("A").addEventListener("click", function() {
+    let audio = new Audio("audio/A.mp3");
+    audio.play();
+    console.log("The 'a' key is pressed.");
+    document.getElementById("A").style.background = "#7ea6a6";
+    setTimeout(function(){ document.getElementById("A").style.background = "white"; }, 500);
+});
+
+
+
+
+
+
+
+
 
 /*
 document.addEventListener("keydown", function(event) {
