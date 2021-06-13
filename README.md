@@ -6,15 +6,7 @@ It is a virtual piano that can be played thorugh keyboard or clicking.
 
 https://github.com/beatriz5/virtual-piano
 
-![](virtual-piano.mp4)
-
-ifdef::env-github[]
-image:https://img.youtube.com/vi/rAteGra5-xM/maxresdefault.jpg[link=https://youtu.be/rAteGra5-xM]
-endif::[]
-
-ifndef::env-github[]
-video::rAteGra5-xM[youtube]
-endif::[]
+![](virtual-piano.gif)
 
 ## Built With
 
