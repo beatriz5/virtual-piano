@@ -1,42 +1,53 @@
 document.addEventListener("keydown", function(event) {
     let key = event.key; //example a or A or s
     let code = event.code; //example KeyA which is a or A
-    let codes = ['KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ',
-        'KeyW','KeyE','KeyT','KeyY','KeyU'];
+    let codes = ['KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ', 'KeyW','KeyE','KeyT','KeyY','KeyU'];
     let whiteKeys = ['A','S','D','F','G','H','J'];
 
     if(codes.includes(code)){
-
+        /* play audio when keydown */
         console.log(`The '${key}' key is pressed`);
         let audioFile = `audio/${key.toUpperCase()}.mp3`
         let audio =  new Audio(audioFile);
         audio.play();
 
+        /* color change */
         let currentColor = whiteKeys.includes(key.toUpperCase()) ? "white" : "black";
-        document.getElementById(key.toUpperCase()).style.background = "#7ea6a6";
+        document.getElementById(key.toUpperCase()).style.background = "lightblue";
         setTimeout(function(){
-            document.getElementById(key.toUpperCase()).style.background = currentColor; }, 550);
+            document.getElementById(key.toUpperCase()).style.background = currentColor; }, 700);
 
     } else{
         console.log(`The piano does not have the '${key.toUpperCase()}' key`);
     }
 });
 
-document.getElementById("A").addEventListener("click", function() {
-    let audio = new Audio("audio/A.mp3");
-    audio.play();
-    console.log("The 'a' key is pressed.");
-    document.getElementById("A").style.background = "#7ea6a6";
-    setTimeout(function(){ document.getElementById("A").style.background = "white"; }, 500);
-});
 
+document.addEventListener('click', function(e) {
+    let usedKeys = ['A','S','D','F','G','H','J','W','E','T','Y','U'];
+    let whiteKeys = ['A','S','D','F','G','H','J'];
 
+    e = e || window;
+    let target = e.target,
+        text = target.textContent || target.innerText;
 
+    if(usedKeys.includes(text)) {
+        /* play audio when click */
+        let audio = new Audio(`audio/${text}.mp3`);
+        audio.play();
+        console.log(`The '${text}' key is clicked`);
 
+        /* color change */
+        let currentColor = whiteKeys.includes(text) ? "white" : "black";
+        document.getElementById(text).style.background = "#7ea6a6";
+        setTimeout(function () {
+            document.getElementById(text).style.background = currentColor; }, 700);
 
+    }else{
+        console.log("That is not part of a key");
+    }
 
-
-
+    }, false);
 
 /*
 document.addEventListener("keydown", function(event) {
