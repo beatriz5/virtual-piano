@@ -6,7 +6,8 @@ document.addEventListener("keydown", function(event) {
 
     if(codes.includes(code)){
         console.log(`The '${key}' key is pressed`);
-        let audio =  new Audio(`audio/${key.toUpperCase()}.mp3`);
+        let audioFile = `audio/${key.toUpperCase()}.mp3`
+        let audio =  new Audio(audioFile);
         console.log(`audio/${key.toUpperCase()}.mp3`);
         audio.play();
     } else{
