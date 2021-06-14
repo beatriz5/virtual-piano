@@ -1,15 +1,15 @@
-html{
+html {
     background: #383838;
     font-size: 22px;
     padding: 0;
     margin: 0;
 }
 
-kbd{
+kbd {
     font-family: 'Raleway', sans-serif;
 }
 
-.container{
+.container {
     position: fixed;
     margin: auto auto auto;
     top: 50%;
@@ -20,7 +20,7 @@ kbd{
     width: 50rem;
 }
 
-.white-key{
+.white-key {
     display: inline-block;
     border: solid darkgray;
     width: 6rem;
@@ -34,12 +34,12 @@ kbd{
     line-height: 34rem;
 }
 
-.white-keys{
+.white-keys {
     z-index: 1;
 }
 
 
-.black-key{
+.black-key {
     display: inline-block;
     border: solid darkgray;
     width: 4rem;
@@ -51,10 +51,10 @@ kbd{
     z-index: 2;
     position: relative;
     line-height: 20rem;
-    margin-right:  1.9rem;
+    margin-right: 1.9rem;
 }
 
-.black-keys{
+.black-keys {
     position: absolute;
     left: 0;
     top: 0;
