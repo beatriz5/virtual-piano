@@ -4,7 +4,7 @@ It is a virtual piano that can be played thorugh keyboard or clicking.
 
 ## Demonstration
 
-https://beatriz5.github.io/virtual-piano/
+:loud_sound: https://beatriz5.github.io/virtual-piano/ :loud_sound:
 
 ![](ezgif.com-piano.gif)
 
