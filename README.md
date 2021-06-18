@@ -1,10 +1,10 @@
 # Virtual Piano
 
-It is a virtual piano that can be played thorugh keyboard or clicking.
+It is a virtual piano to play through the keyboard or by clicking. When used, the key turns light blue, and the piano originates a sound. Enjoy the melody.  
 
 ## Demonstration
 
-:loud_sound: https://beatriz5.github.io/virtual-piano/ :loud_sound:
+:loud_sound:    https://beatriz5.github.io/virtual-piano/ 
 
 ![](ezgif.com-piano.gif)
 
